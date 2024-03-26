@@ -43,8 +43,11 @@ ops.forEach(op => op.addEventListener('click',()=>{
         num1 = num2 = '' ; operation = '' ; label.innerHTML = '' ; number_chosing = 0;
     }
     else{
-        operation = op.innerHTML;
-        number_chosing = 1;
+        if(num1 != ''){
+            operation = op.innerHTML;
+            number_chosing = 1;
+        }
+
     }
 }))
 
